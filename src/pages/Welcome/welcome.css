@@ -8,13 +8,31 @@
 
 .container{
     color: white;
-    width: 50%;
-    height: 200px;
     text-align: center;
-    display: inherit;
-    place-items: center;
+    /* transform: translate(-50%,-50%); */
 }
 
 .link {
     color: white;
+}
+
+.title{
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+    }
+
+    30%{
+        letter-spacing: 30px;
+    }
+
+    80%{
+        letter-spacing: 10px;
+    }
 }

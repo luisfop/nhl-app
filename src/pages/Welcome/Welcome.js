@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <div className="welcome">
       <div className="container">
-        <h1>Welcome</h1>
+        <h1 className="title">Welcome in</h1>
         <Link className="link" to="/home">Go to home</Link>
       </div>
     </div>
