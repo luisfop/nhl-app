@@ -1,0 +1,20 @@
+.welcome{
+    display: grid;
+    background: url('../../Assets/Wallpaper.jpg');
+    min-height: 100vh;
+    place-items: center;
+    background-size: cover;
+}
+
+.container{
+    color: white;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    display: inherit;
+    place-items: center;
+}
+
+.link {
+    color: white;
+}

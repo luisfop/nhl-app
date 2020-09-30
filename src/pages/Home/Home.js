@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
-import { getTeams } from '../services/GetTeams';
-import { TEAMS_URL } from '../Enviroment';
+import { getTeams } from '../../services/GetTeams';
+import { TEAMS_URL } from '../../Enviroment';
 
 const Home = () => {
     useEffect(() => {
