@@ -2,6 +2,8 @@ import React,{useEffect,useState} from 'react'
 import { getTeams } from '../../services/GetTeams';
 import { TEAMS_URL } from '../../Enviroment';
 
+import TeamCard from '../../components/TeamCard/TeamCard';
+
 const Home = () => {
 
     const [ teams, setTeams ] = useState([])
@@ -26,8 +28,11 @@ const Home = () => {
         <div>
             <h1 style={{textAlign: 'center'}}>HOME</h1>
 
+            <TeamCard/>
+
             <div>
                 {/* {showTeams} */}
+                
             </div>
         </div>
     )
