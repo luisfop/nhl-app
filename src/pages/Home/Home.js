@@ -4,6 +4,7 @@ import { TEAMS_URL } from '../../Enviroment';
 
 import TeamCard from '../../components/TeamCard/TeamCard';
 
+
 const Home = () => {
 
     const [ teams, setTeams ] = useState([])
@@ -18,20 +19,21 @@ const Home = () => {
     },[])
 
 
-    // console.log('TEAMS ->', teams)
+    console.log('TEAMS ->', teams)
 
     const showTeams = teams.map(team => {
-        return (<p>{team.name}</p>)
+        return (<TeamCard name={team.name} />)
     }) 
 
     return (
         <div>
             <h1 style={{textAlign: 'center'}}>HOME</h1>
 
-            <TeamCard/>
+
+
 
             <div>
-                {/* {showTeams} */}
+                {showTeams}
                 
             </div>
         </div>

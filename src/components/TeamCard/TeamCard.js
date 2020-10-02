@@ -1,14 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import { DET } from "react-nhl-logos";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-const TeamCard = () => {
-    return (
-        <div>
-            <h1>Team Card</h1>
-            <DET/>
-        </div>
-    )
-}
+import {DET}  from "../../Assets/teamsLogo/index";
 
-export default TeamCard
+const TeamCard = ({ name }) => {
+
+    const teste = <DET/>;
+
+  return (
+    <div>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            {teste}
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+};
+
+export default TeamCard;
